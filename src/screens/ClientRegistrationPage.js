@@ -1,37 +1,44 @@
 // ClientRegistrationPage.js
-import React, { useState } from 'react';
+import React from 'react';
+import { View, Text, TextInput, TouchableOpacity } from 'react-native';
+import { styles } from './styles';
 
-function ClientRegistrationPage() {
-  // Form logic for client registration
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
-// Function to handle form submission
-const handleSubmit = (event) => {
-    event.preventDefault();
-    // Send username, password, and other registration data to the backend for account creation
-    // Example: fetch('/api/register/client', { method: 'POST', body: JSON.stringify({ username, password, otherData }) });
-  };  
-
+const ClientRegistrationPage = () => {
   return (
-    <div>
-      <h2>Client Registration</h2>
-      {/* Client registration form */}
-      <form onSubmit={handleSubmit}>
-        {/* Client registration form fields */}
-        <label>
-          Username:
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
-        </label>
-        <label>
-          Password:
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-        </label>
-        {/* Other registration form fields */}
-        <button type="submit">Register</button>
-      </form>
-    </div>
+      <View style={styles.clientRegistrationContainer}>
+          {/* Full Name Input */}
+          <TextInput
+              style={styles.clientRegistrationInput}
+              placeholder="Full Name"
+          />
+          {/* Email Address Input */}
+          <TextInput
+              style={styles.clientRegistrationInput}
+              placeholder="Email Address"
+              keyboardType="email-address"
+          />
+          {/* Username Input */}
+          <TextInput
+              style={styles.clientRegistrationInput}
+              placeholder="Username"
+          />
+          {/* Password Input */}
+          <TextInput
+              style={styles.clientRegistrationInput}
+              placeholder="Password"
+              secureTextEntry={true}
+          />
+          {/* Organization Code Input */}
+          <TextInput
+              style={styles.clientRegistrationInput}
+              placeholder="Organization Code"
+          />
+          {/* Register Now Button */}
+          <TouchableOpacity style={styles.clientRegistrationButton}>
+              <Text style={styles.clientRegistrationButtonText}>Register Now</Text>
+          </TouchableOpacity>
+      </View>
   );
-}
-    
+};
+
 export default ClientRegistrationPage;

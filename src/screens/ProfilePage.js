@@ -11,15 +11,15 @@ function ProfilePage() {
       <form>
         <label>
           Username:
-          <input type="text" />
+          <input type="text"/>
         </label>
         <label>
           Email:
-          <input type="email" />
+          <input type="email"/>
         </label>
         <label>
           Password:
-          <input type="password" />
+          <input type="password"/>
         </label>
         {/* Add more input fields for other profile information */}
         <button type="submit">Create Profile</button>

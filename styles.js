@@ -68,7 +68,11 @@ export const styles = StyleSheet.create({
         color: '#888',
     },  
 
+    // Styles for the organization registration page
+
+    
     // Styles for the client registration page
+
         clientRegistrationContainer: {
             flex: 1,
             alignItems: 'center',

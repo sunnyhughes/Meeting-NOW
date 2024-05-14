@@ -66,41 +66,6 @@ export const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 10,
         color: '#888',
-    },  
+    }
 
-    // Styles for the organization registration page
-
-    
-    // Styles for the client registration page
-
-        clientRegistrationContainer: {
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-            paddingHorizontal: 20,
-        },
-        clientRegistrationInput: {
-            width: '100%',
-            height: 40,
-            borderWidth: 1,
-            borderColor: '#ccc',
-            borderRadius: 5,
-            paddingHorizontal: 10,
-            marginBottom: 10,
-        },
-        clientRegistrationButton: {
-            backgroundColor: 'blue',
-            width: '100%',
-            height: 40,
-            borderRadius: 5,
-            alignItems: 'center',
-            justifyContent: 'center',
-            marginBottom: 10,
-        },
-        clientRegistrationButtonText: {
-            color: 'white',
-            fontWeight: 'bold',
-        },
-    });
-    
-    // Add styles as needed
+});
